@@ -7,11 +7,11 @@
 ## 1. Scope
 The task requires an audit of one real public-facing website. Select a website you can access, record its URL and date, run Lighthouse in Chrome DevTools, and perform keyboard-only navigation. Do not represent this project template as a completed third-party website audit.
 
-- Website audited: **[enter chosen public website URL]**
-- Date and time: **[enter actual date/time]**
+- Website audited: **[https://www.w3.org/WAI/]**
+- Date and time: **[10/10/2026-10:10pm]**
 - Browser / version: **[enter browser/version]**
 - Lighthouse version: **[record from report if available]**
-- Auditor: **[your name]**
+- Auditor: **[S Somnath]**
 
 ## 2. Lighthouse results
 Run Chrome DevTools → Lighthouse → select Accessibility, Best Practices, SEO (and Performance if required) → Analyze page load. Save the report and a screenshot.
@@ -22,7 +22,7 @@ Run Chrome DevTools → Lighthouse → select Accessibility, Best Practices, SEO
 | Best Practices | [96] | [lighthouse-screenshot.png] |
 | SEO | [100] | [lighthouse-screenshot.png] |
 | Performance | [61] | [lighthouse-screenshot.png] |
-![Lighthouse audit scores](lighthouse-screenshot.png)
+![Lighthouse audit scores](lighthouse-screenshot.png.png)
 
 **Do not guess or fill scores without running the test.** Attach the generated report/screenshot in `docs/evidence/` or link it in your repository README.
 
