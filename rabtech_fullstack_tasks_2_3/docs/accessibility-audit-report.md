@@ -18,10 +18,10 @@ Run Chrome DevTools → Lighthouse → select Accessibility, Best Practices, SEO
 
 | Category | Actual score | Evidence file |
 |---|---:|---|
-| Accessibility | [enter measured score] | [filename] |
-| Best Practices | [enter measured score] | [filename] |
-| SEO | [enter measured score] | [filename] |
-| Performance | [optional measured score] | [filename] |
+| Accessibility | [61] | [ighthouse-screenshot.png] |
+| Best Practices | [100] | [ighthouse-screenshot.png] |
+| SEO | [100] | [ighthouse-screenshot.png] |
+| Performance | [100] | [ighthouse-screenshot.png] |
 
 **Do not guess or fill scores without running the test.** Attach the generated report/screenshot in `docs/evidence/` or link it in your repository README.
 
