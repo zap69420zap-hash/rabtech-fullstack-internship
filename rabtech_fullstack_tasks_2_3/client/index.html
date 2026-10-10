@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Accessible project dashboard demonstration for a full-stack web development internship.">
+  <title>Project Overview | Accessible Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Project dashboard home">Northstar<span> / Workspace</span></a>
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" aria-current="page">Overview</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="components.html">Components</a></li>
+      </ul>
+    </nav>
+    <button class="button button-quiet" id="contrast-toggle" type="button" aria-pressed="false">High contrast</button>
+  </header>
+
+  <div class="app-layout">
+    <aside class="sidebar" aria-label="Workspace navigation">
+      <h2 class="sidebar-heading">Workspace</h2>
+      <nav aria-label="Workspace">
+        <ul class="side-nav">
+          <li><a href="#overview" aria-current="page">Overview</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#activity">Activity</a></li>
+          <li><a href="components.html">UI components</a></li>
+        </ul>
+      </nav>
+      <p class="sidebar-note">Demo data only. No personal information is collected.</p>
+    </aside>
+
+    <main id="main-content" class="main-content">
+      <section id="overview" aria-labelledby="page-title">
+        <p class="eyebrow">WORKSPACE / OVERVIEW</p>
+        <h1 id="page-title">Project overview</h1>
+        <p class="intro">A clean, responsive starting point for an accessible project dashboard.</p>
+      </section>
+
+      <section class="metric-grid" aria-label="Project summary">
+        <article class="metric-card">
+          <h2>Open projects</h2><p class="metric-value">08</p><p class="metric-caption">Across 3 workstreams</p>
+        </article>
+        <article class="metric-card">
+          <h2>Tasks completed</h2><p class="metric-value">24</p><p class="metric-caption">This month</p>
+        </article>
+        <article class="metric-card">
+          <h2>Review queue</h2><p class="metric-value">03</p><p class="metric-caption">Awaiting review</p>
+        </article>
+      </section>
+
+      <section id="projects" class="panel" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">YOUR WORK</p><h2 id="projects-title">Recent projects</h2></div>
+          <button class="button" id="add-project" type="button">Add demo project</button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <caption class="visually-hidden">Recent projects and their current status</caption>
+            <thead><tr><th scope="col">Project</th><th scope="col">Owner</th><th scope="col">Status</th><th scope="col">Updated</th></tr></thead>
+            <tbody id="project-rows">
+              <tr><th scope="row">Accessible dashboard</th><td>Web team</td><td><span class="status status-progress">In progress</span></td><td>Today</td></tr>
+              <tr><th scope="row">API foundation</th><td>Platform team</td><td><span class="status status-review">In review</span></td><td>Yesterday</td></tr>
+              <tr><th scope="row">Design tokens</th><td>Design team</td><td><span class="status status-done">Complete</span></td><td>2 days ago</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p id="project-announcement" class="announcement" role="status" aria-live="polite"></p>
+      </section>
+
+      <section id="activity" class="panel" aria-labelledby="activity-title">
+        <h2 id="activity-title">Recent activity</h2>
+        <ol class="activity-list">
+          <li><span class="activity-dot" aria-hidden="true"></span><div><strong>Dashboard structure created</strong><p>Semantic page regions and navigation added.</p></div><time datetime="2026-10-10">10 Oct 2026</time></li>
+          <li><span class="activity-dot" aria-hidden="true"></span><div><strong>Accessibility checks planned</strong><p>Keyboard and Lighthouse review remain to be recorded.</p></div><time datetime="2026-10-10">10 Oct 2026</time></li>
+        </ol>
+      </section>
+      <footer class="site-footer"><p>Internship project demonstration · Built with semantic HTML, CSS and JavaScript.</p></footer>
+    </main>
+  </div>
+</body>
+</html>
