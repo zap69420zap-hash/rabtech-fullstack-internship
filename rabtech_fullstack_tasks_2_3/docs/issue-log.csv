@@ -1,6 +1,6 @@
 ID,Issue title,URL or page,Steps to reproduce,Expected behavior,Observed behavior,Impact,Priority,Evidence filename,Recommended remediation,Status
-A-01,,,,,,,,,,
-A-02,,,,,,,,,,
-A-03,,,,,,,,,,
-A-04,,,,,,,,,,
-A-05,,,,,,,,,,
+A-01,Skip-to-content link,https://www.w3.org/WAI/,"Reload page and press Tab","A skip link should allow keyboard users to bypass repeated navigation","Not found during initial check; further verification required","Potential extra keyboard navigation",Medium,skip-link-check.png,"Verify whether a skip link exists and add one if needed",Needs verification
+A-02,Keyboard focus visibility,https://www.w3.org/WAI/,"Press Tab repeatedly through links and buttons","Focused elements should have a visible focus indicator","Visible focus observed during initial test","Keyboard users need to identify the focused element",Medium,keyboard-focus.png,"Ensure all interactive elements have visible focus indicators",Partially tested
+A-03,Keyboard navigation order,https://www.w3.org/WAI/,"Navigate from the beginning to the footer using Tab","Focus should follow a logical order","Not fully tested","Potential navigation difficulty if the order is illogical",Medium,tab-order.png,"Ensure the focus order is logical",Not tested
+A-04,Link accessible names,https://www.w3.org/WAI/,"Inspect links using browser accessibility tools","Links should have meaningful accessible names","Not tested","Potential difficulty understanding links with assistive technology",Medium,link-names.png,"Provide descriptive accessible names for links",Not tested
+A-05,Heading structure,https://www.w3.org/WAI/,"Inspect page headings using accessibility tools","Headings should form a meaningful hierarchy","Not tested","Potential difficulty navigating page sections",Low,heading-structure.png,"Use semantic headings in a logical hierarchy",Not tested
